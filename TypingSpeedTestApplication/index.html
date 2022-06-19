@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Application</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Test Your Typing Speed</h1>
+        </div>
+        <div class="result-wrapper">
+
+            <div class="wrapper-flex-item">
+                <div class="wpm-wrapper display-none">
+                    <div class="header">WPM</div>
+                    <div class="wpm-res" id="wpm">0</div>
+                </div>
+                <div class="cpm-wrapper display-none">
+                    <div class="header">CPM</div>
+                    <div class="cpm-res" id="cpm">0</div>
+                </div>
+            </div>
+            <div class="wrapper-flex-item">
+                <div class="errors">
+                    <div class="header">ERRORS</div>
+                    <div class="error-res" id="error">0</div>
+                </div>
+                <div class="time">
+                    <div class="header">TIME</div>
+                    <div class="time-res" id="remaining-time">60s</div>
+                </div>
+
+                <div class="per-accuracy">
+                    <div class="header">% ACCURACY</div>
+                    <div class="per-acc-res" id="per-accuracy">100</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-msg">
+            Click on the area below to start the game
+        </div>
+        <textarea name="typing-area" id="typing-area" onfocus="startGame()" oninput="processTypedText()"
+            placeholder="start typing here..."></textarea>
+        <button type="button" class="restart display-none" onclick="restartGame()">Restart</button>
+
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

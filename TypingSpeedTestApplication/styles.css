@@ -1,0 +1,163 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffff0;
+  text-align: center;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.result-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wrapper-flex-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.errors,
+.time,
+.per-accuracy,
+.wpm-wrapper,
+.cpm-wrapper {
+  background-color: #ccda46;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 18%;
+  box-shadow: black 5px 8px 5px;
+}
+
+.error-res,
+.time-res,
+.per-acc-res,
+.wpm-res,
+.cpm-res {
+  font-size: 50px;
+}
+
+.header {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+#game-msg {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #ccda46;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1%;
+  box-shadow: black 5px 8px 5px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 3vh;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  background-color: #2c6965;
+  box-shadow: 5px 7px 5px black;
+  border: none;
+  padding: 8px;
+}
+
+#typing-area {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #f5f4c9;
+  width: 50%;
+  font-size: 30px;
+  padding: 20px;
+  box-shadow: black 5px 8px 5px;
+  border: 1px solid gray;
+  font-weight: bold;
+}
+
+#typing-area:focus {
+  outline: none;
+}
+
+.incorrect_char {
+  color: red;
+  font-weight: 4;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: green;
+  font-weight: 4;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #typing-area {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #typing-area {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #typing-area {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
